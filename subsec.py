@@ -10,6 +10,7 @@ def main():
         X = datastr[0] #string grande
         Y = datastr[1] #sub string
         m = datastr[2] #movimientos max?
-        print("si esta leyendo")
+        print(datastr[1])
+        linea = sys.stdin.readline()
 
 main()
