@@ -5,20 +5,29 @@ from unittest import skip
 
 def max_str( m, X ,Y ):
     counter=0  
+    
     #cambio en letras para maximizar sub str
     for i in range (0,m):
-        
+        b=True
+        #par
         if ((i%2)==0):
-            for j in reversed(range(0,len(X))):
-                if X[j]!=Y[0]:
-                    X[j]=Y[0]
+            j= len(X)-1
+            while b and j > 0:
+                if X[j]!=Y[1]:
+                    X[j]=Y[1]
+                    b=False
+                j-=1
                 
                
-               
+        #imapr 
         if ((i%2)==1):
-            for j in range(0, len(X)):
+            j=0
+            while b and j < len(X) :
                 if X[j]!=Y[0]:
                     X[j]=Y[0]
+                    b=False
+                j+=1
+
                
            
           
@@ -28,7 +37,7 @@ def max_str( m, X ,Y ):
             interval=X[i+1:len(X)]
             counter+=interval.count(Y[1])
             
-    return X
+    return counter
     
 def main():
     linea = sys.stdin.readline()
