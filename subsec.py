@@ -73,7 +73,7 @@ def main():
         comp.append(result)
         print(result)
         linea = sys.stdin.readline()
-    print(porcentaje_correcto(comp))
+    #print(porcentaje_correcto(comp))
 
 start_time=time.time()
 main()
