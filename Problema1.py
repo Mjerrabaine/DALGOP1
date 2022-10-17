@@ -44,9 +44,9 @@ def max_str( m, X ,Y ):
             
     return counter
 
-
+#este metodo compara con el archivo de prueba que se nos dio
 def porcentaje_correcto(comp):
-    prueba = open('P1_cases.out','r')
+    prueba = open('P1_cases.out','r')#pueden cambiar la direccion  que esta aqui para probar si quieren
     s=[]
     for i in range(0,len(comp)):
         temp=int(prueba.readline())
@@ -73,8 +73,8 @@ def main():
         comp.append(result)
         print(result)
         linea = sys.stdin.readline()
-    #print(porcentaje_correcto(comp))
+    #print(porcentaje_correcto(comp))#metodo de comparacion
 
 start_time=time.time()
 main()
-print("--- %s tiempo secgundos ---" % (time.time() - start_time))
+print("--- %s tiempo segundos ---" % (time.time() - start_time))
