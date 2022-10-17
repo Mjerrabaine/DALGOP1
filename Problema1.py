@@ -1,7 +1,7 @@
 import sys
 import time
-from unittest import skip
 
+#Autores: Josue Rivera, Luimarco Carrascal, Andres galvis
 
 def max_str( m, X ,Y ):
     counter=0  
@@ -78,3 +78,4 @@ def main():
 start_time=time.time()
 main()
 print("--- %s tiempo segundos ---" % (time.time() - start_time))
+#Autores: Josue Rivera, Luimarco Carrascal, Andres galvis
